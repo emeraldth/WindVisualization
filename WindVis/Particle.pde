@@ -7,7 +7,7 @@ class Particle {
   Particle() {
     x = random(0,1000);
     y = random(0,400);
-    lifetime = (int)random(0,200);
+    lifetime = (int)random(0,life);
     c = color(random(0,255), random(0,255), random(0,255));
   }
   

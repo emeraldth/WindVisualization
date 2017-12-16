@@ -19,8 +19,9 @@ Table vwnd;
 PImage img;
 
 Particle[] particles;
-
-float step = 2;
+int particleAmount = 5000;
+int life = 100;
+int step = 1;
 
 void setup() {
   // If this doesn't work on your computer, you can remove the 'P3D'
@@ -32,7 +33,7 @@ void setup() {
   uwnd = loadTable("uwnd.csv");
   vwnd = loadTable("vwnd.csv");
   
-  particles = new Particle[5000];
+  particles = new Particle[particleAmount];
   for (int i = 0; i < particles.length; i++) {
     particles[i] = new Particle();
   }
